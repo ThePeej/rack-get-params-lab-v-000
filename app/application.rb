@@ -42,6 +42,7 @@ class Application
   end
 
   def handle_add(add_item)
+    binding.pry
     if @@items.include?(add_item)
       @@cart << add_item
       return "added #{add_item}"
